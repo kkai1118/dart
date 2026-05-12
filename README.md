@@ -42,7 +42,7 @@
 - [26. 下一步怎么学](#toc-26)
 
 <a id="toc-01"></a>
-## 1. Dart 是什么
+## 1. Dart 是什么 · [查看补充](chapters/01-overview.md)
 
 - Dart 是 Flutter 的主要开发语言
 - 语法风格接近 Java、JavaScript、TypeScript、C#
@@ -55,7 +55,7 @@
   - 异步
 
 <a id="toc-02"></a>
-## 2. 第一个 Dart 程序
+## 2. 第一个 Dart 程序 · [查看补充](chapters/02-first-program.md)
 
 ```dart
 void main() {
@@ -70,7 +70,7 @@ void main() {
 - `print(...)`：控制台输出
 
 <a id="toc-03"></a>
-## 3. 变量：var、final、const
+## 3. 变量：var、final、const · [查看补充](chapters/03-variables.md)
 
 ### `var`
 
@@ -143,7 +143,7 @@ const pi = 3.14;
 - `const`：编译期常量
 
 <a id="toc-04"></a>
-## 4. 基础类型
+## 4. 基础类型 · [查看补充](chapters/04-basic-types.md)
 
 ```dart
 String name = 'Tom';
@@ -162,7 +162,7 @@ var isLogin = true;
 ```
 
 <a id="toc-05"></a>
-## 5. 字符串插值
+## 5. 字符串插值 · [查看补充](chapters/05-strings.md)
 
 ```dart
 var name = 'Tom';
@@ -178,7 +178,7 @@ print('next year: ${age + 1}');
 - 表达式：`${...}`
 
 <a id="toc-06"></a>
-## 6. 条件判断
+## 6. 条件判断 · [查看补充](chapters/06-conditions.md)
 
 ```dart
 var score = 80;
@@ -193,7 +193,7 @@ if (score >= 90) {
 ```
 
 <a id="toc-07"></a>
-## 7. 循环
+## 7. 循环 · [查看补充](chapters/07-loops.md)
 
 ```dart
 for (var i = 0; i < 3; i++) {
@@ -218,7 +218,7 @@ while (n < 3) {
 ```
 
 <a id="toc-08"></a>
-## 8. 集合：List、Map、Set
+## 8. 集合：List、Map、Set · [查看补充](chapters/08-collections.md)
 
 ### List
 
@@ -272,7 +272,7 @@ print(ids);
 ```
 
 <a id="toc-09"></a>
-## 9. 函数
+## 9. 函数 · [查看补充](chapters/09-functions.md)
 
 ```dart
 int add(int a, int b) {
@@ -294,7 +294,7 @@ int add(int a, int b) => a + b;
 ```
 
 <a id="toc-10"></a>
-## 10. 参数：位置参数、命名参数
+## 10. 参数：位置参数、命名参数 · [查看补充](chapters/10-parameters.md)
 
 ### 位置可选参数
 
@@ -321,7 +321,7 @@ createUser(name: 'Jack', age: 20);
 - `required` 表示必须传
 
 <a id="toc-11"></a>
-## 11. 空安全
+## 11. 空安全 · [查看补充](chapters/11-null-safety.md)
 
 Dart 默认开启空安全。
 
@@ -364,7 +364,7 @@ print(name!.length);
 - 如果判断错了，运行时会报错
 
 <a id="toc-12"></a>
-## 12. 类和对象
+## 12. 类和对象 · [查看补充](chapters/12-classes.md)
 
 ```dart
 class User {
@@ -387,7 +387,7 @@ user.sayHello();
 ```
 
 <a id="toc-13"></a>
-## 13. 命名构造参数
+## 13. 命名构造参数 · [查看补充](chapters/13-named-constructors.md)
 
 Flutter 里很常见。
 
@@ -407,7 +407,7 @@ final user = User(name: 'Tom', age: 18);
 ```
 
 <a id="toc-14"></a>
-## 14. getter
+## 14. getter · [查看补充](chapters/14-getters.md)
 
 ```dart
 class User {
@@ -428,7 +428,7 @@ print(user.fullName);
 ```
 
 <a id="toc-15"></a>
-## 15. 继承与重写
+## 15. 继承与重写 · [查看补充](chapters/15-inheritance.md)
 
 ```dart
 class Animal {
@@ -446,7 +446,7 @@ class Dog extends Animal {
 ```
 
 <a id="toc-16"></a>
-## 16. 异步：Future、async、await
+## 16. 异步：Future、async、await · [查看补充](chapters/16-async-await.md)
 
 ```dart
 Future<String> fetchName() async {
@@ -471,7 +471,7 @@ void main() async {
 - `await`：等待异步结果
 
 <a id="toc-17"></a>
-## 17. 异常处理
+## 17. 异常处理 · [查看补充](chapters/17-exceptions.md)
 
 ```dart
 try {
@@ -483,7 +483,7 @@ try {
 ```
 
 <a id="toc-18"></a>
-## 18. import
+## 18. import · [查看补充](chapters/18-imports.md)
 
 ```dart
 import 'dart:math';
@@ -506,7 +506,7 @@ void main() {
 ```
 
 <a id="toc-19"></a>
-## 19. Flutter 中最常见的 Dart 代码
+## 19. Flutter 中最常见的 Dart 代码 · [查看补充](chapters/19-flutter-dart.md)
 
 ### 例子 1
 
@@ -548,7 +548,7 @@ static const home = '/';
 - `const`：编译期常量
 
 <a id="toc-20"></a>
-## 20. print、debugPrint、log 的区别
+## 20. print、debugPrint、log 的区别 · [查看补充](chapters/20-logging.md)
 
 ### `print`
 
@@ -571,7 +571,7 @@ debugPrint('route: ${settings.name}');
 - 适合模块化日志和错误记录
 
 <a id="toc-21"></a>
-## 21. 初学者常见坑
+## 21. 初学者常见坑 · [查看补充](chapters/21-common-pitfalls.md)
 
 - 把 `var` 当成动态类型
 - 分不清 `final` 和 `const`
@@ -592,7 +592,7 @@ list.add(3); // 可以
 - 不一定限制对象内部内容变化
 
 <a id="toc-22"></a>
-## 22. 推荐书写习惯
+## 22. 推荐书写习惯 · [查看补充](chapters/22-style-guide.md)
 
 - 局部变量类型明显时用 `var`
 - 默认优先考虑 `final`
@@ -602,7 +602,7 @@ list.add(3); // 可以
 - Flutter 调试优先用 `debugPrint`
 
 <a id="toc-23"></a>
-## 23. 学习路线
+## 23. 学习路线 · [查看补充](chapters/23-learning-path.md)
 
 建议按这个顺序学：
 
@@ -616,7 +616,7 @@ list.add(3); // 可以
 8. 再回来看 Flutter 项目
 
 <a id="toc-24"></a>
-## 24. 10 个高频例子
+## 24. 10 个高频例子 · [查看补充](chapters/24-high-frequency-examples.md)
 
 ```dart
 var name = 'Tom';
@@ -664,7 +664,7 @@ Future<void> load() async {
 ```
 
 <a id="toc-25"></a>
-## 25. 一页速记
+## 25. 一页速记 · [查看补充](chapters/25-cheatsheet.md)
 
 - `var`：自动推断类型
 - `final`：只能赋值一次
@@ -680,7 +680,7 @@ Future<void> load() async {
 - `static`：类成员
 
 <a id="toc-26"></a>
-## 26. 下一步怎么学
+## 26. 下一步怎么学 · [查看补充](chapters/26-next-steps.md)
 
 如果你已经能看懂这份文档，下一步建议：
 
